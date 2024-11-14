@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COE GEC</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9; /* Light background */
+            color: #333;
+        }
+
+        /* Top Navigation */
+        .top-nav {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .top-nav h2 a {
+            color: #00274C; /* Navy blue */
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        .top-nav h2 a:hover {
+            color: #B31B1B; /* Red hover effect */
+        }
+
+        /* Header */
+        header {
+            background-color: #00274C; /* COE navy blue */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Intro Section */
+        .intro {
+            text-align: left;
+            padding: 20px;
+            background-color: #fff;
+            margin-bottom: 40px;
+            font-size: 1.2em;
+        }
+
+        /* Links in intro section */
+        .intro a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .intro a:hover {
+            color: #B31B1B; /* Change to red on hover */
+        }
+
+        /* Main Section */
+        .main-section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0 auto;
+            max-width: 1200px;
+            flex-wrap: wrap; /* Allows tiles to wrap on smaller screens */
+        }
+
+        /* Specific Background Colors for the Tiles */
+        .main-section .tile:first-child {
+            background-color: #ccd7cd; /* Light green-gray */
+        }
+
+        .main-section .tile:nth-child(2) {
+            background-color: #d3c7bb; /* Light beige */
+        }
+
+        .main-section .tile:nth-child(3) {
+            background-color: #ded3b4; /* Pale sandy yellow */
+        }
+
+        /* Tile Style */
+        .tile {
+            width: 350px;
+            height: 400px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.2s;
+            cursor: pointer;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .tile:hover {
+            transform: scale(1.05);
+        }
+
+        .tile img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .tile h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .tile p {
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        .tile a {
+            text-decoration: none;
+            color: #00274C;
+            font-weight: bold;
+        }
+
+        .tile a:hover {
+            color: #B31B1B;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #00274C;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Custom Background Colors for Specific Tiles */
+        .associate-dean-tile {
+            background-color: #719aac !important; /* Light blue sugar paper color */
+        }
+
+        .associate-director-tile {
+            background-color: #CC99CB !important; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <h2><a href="https://northeastern.edu" target="_new">Northeastern University</a></h2>
+        <h2><a href="https://coe.northeastern.edu" target="_new">College of Engineering</a></h2>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <h1><a href="index.html">COE Global Engineering Campus</a></h1>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <p>Welcome to the College of Engineering's Global Engineering Campus, the College of Engineering presence in the 
+        <a href="https://www.northeastern.edu/our-global-university-system/">Global University System</a>. For the purpose of these pages, the Global Engineering Campus concerns all Northeastern University campuses outside Massachusetts where the college expands, creates, and maintains educational and research programs.</p>
+        <p>From this page, you can explore the status of our programs, get to know our full-time faculty and staff, and the policy of our engineering campus, as well as links to the teams that support the global university system.</p>
+        <p>For any questions or further information, please contact the Associate Dean of the Global Engineering Campus and the Associate Director of Global Operations.</p>
+    </section>
+
+    <!-- Main Section with Tiles -->
+    <div class="main-section">
+        <!-- Program Status Tile -->
+        <div class="tile" onclick="location.href='STATUS/GEC-ProgramStatus.html';">
+            <img src="pics/program-icon.webp" alt="Program Status">
+            <h2>Program Status</h2>
+            <p>Learn more about the current and upcoming programs in our Global Engineering Campus.</p>
+        </div>
+
+        <!-- COE Faculty in the Network Tile -->
+        <div class="tile" onclick="location.href='PEOPLE/facultyStaffInEGC.html';">
+            <img src="pics/faculty-icon.webp" alt="COE Faculty">
+            <h2>COE Faculty and Staff in the Network</h2>
+            <p>Meet our full-time faculty and staff across our global campuses.</p>
+        </div>
+
+        <!-- Global University System Teams Tile -->
+        <div class="tile" onclick="location.href='global-teams.html';">
+            <img src="pics/team-icon.webp" alt="Global Teams">
+            <h2>Policies and Global University System Teams</h2>
+            <p>Useful links to the teams that power the Global University System and to network policies.</p>
+        </div>
+    </div>
+
+    <br><br><br>
+    <header>
+        <h1>Global Engineering Campus: Leadership</h1>
+    </header>
+
+     <br><br><br>
+    <!-- Additional Tiles for Associate Dean and Associate Director -->
+    <div class="main-section">
+        <!-- Associate Dean Tile -->
+        <div class="tile associate-dean-tile" onclick="location.href='https://ece.northeastern.edu/fac-ece/basagni/';">
+            <img src="pics/basagni-s.jpg" alt="Associate Dean">
+            <p>Stefano Basagni (he/him)</p>
+            <h2>Associate Dean of the Global Engineering Campus</h2>
+            <p>Email: <a href="mailto:s.basagni@northeastern.edu">s.basagni@northeastern.edu</a></p>
+        </div>
+
+        <!-- Associate Director Tile -->
+        <div class="tile associate-director-tile" onclick="location.href='index.html';">
+            <img src="pics/nelson-j.jpg" alt="Associate Director">
+            <p>Jennifer Nelson</p>
+            <h2>Associate Director of Global Operations</h2>
+            <p>Email: <a href="mailto:j.nelson@northeastern.edu">j.nelson@northeastern.edu</a></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Northeastern University College of Engineering</p>
+    </footer>
+
+</body>
+</html>
