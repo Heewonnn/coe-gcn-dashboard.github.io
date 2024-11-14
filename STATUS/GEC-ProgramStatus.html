@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEC: Program Status</title>
+
+ <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="gec-styles.css">
+
+  <style>
+    td, th {
+      padding: 2px 5px; /* Add space between content and border */
+    }
+    tfoot td {
+      font-weight: bold;
+      background-color: #f2f2f2;
+    }
+  
+   /* Center text in the "Total by Program" column */
+   td:last-child {
+    text-align: center;
+    font-weight: bold;
+    background-color: #f2f2f2;
+   }
+
+  /* Center text in the "Total Enrollment by Campus" row */
+  tfoot td {
+    text-align: center;
+  }
+  
+     /* Hide content and background color but keep the borders */
+    .hidden-content {
+      background-color: transparent !important; /* Make background transparent */
+      color: transparent !important; /* Make text transparent */
+    }
+
+    /* Group colors*/
+    .group1 {
+      background-color: orange; /* Orange background color for group 1 */
+      color: black; /* Text stays black */
+    }
+
+    .group2 {
+      background-color: lightgreen; /* Light green background color for group 2 */
+      color: black; /* Text stays black */    
+     }
+
+   .group3 {
+      background-color: lightblue; /* Light blue background color for group 3 */
+      color: black; /* Text stays black */
+    }
+
+    .group4 {
+      background-color: yellow; /* Red background color for group 4 */
+      color: black; /* Text stays black */
+    }
+    
+    .group5 {
+      background-color: red; /* Red background color for group 4 */
+      color: black; /* Text stays black */
+    }
+
+    /* Color for the checkbox labels */
+    .label-group1 {
+      color: orange;
+    }
+
+    .label-group2 {
+      color: lightgreen;
+    }
+
+    .label-group3 {
+      color: lightblue;
+    }
+
+    .label-group4 {
+      color: yellow;
+    }
+
+    .label-group5 {
+      color: red;
+    }
+
+   /* Style for the background box */
+    .background-box {
+      background-color: #00274C; /* Dark background color */
+      color: white; /* White text for better contrast */
+      padding: 20px; /* Add some padding around the content */
+      border-radius: 10px; /* Rounded corners for aesthetics */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    }
+
+    /* Explanation text (after the colon) */
+    .explanation {
+      color: white; /* White explanation text */
+    }
+</style>
+
+</head>
+
+
+<body>
+
+<body style="background-color: white;">
+
+<header>
+  <h2><a href="https://northeastern.edu"  target="_new">Northeastern University</a></h2>
+  <h2><a href="https://coe.northeastern.edu"  target="_new">College of Engineering</a></h2>
+  <br>
+  <h1><a href = "../index.html">Global Engineering Campus</a>: Program Status @ Fall 2024</h1>
+</header>
+
+<br><br>
+<div class="background-box">
+<!-- <div> -->
+  <p class="is-style-eyebrow is-style-menu-title has-white-color has-text-color"><b><h3>Program Status Selectors</h3></b></p>
+  <nav aria-label="Program Status Keys">
+  <h3>
+    <ul style="display: flex; list-style: none; padding: 0;">
+      <li style="margin-right: 30px;">
+        <label class="label-group1">
+        <input type="checkbox" id="toggleGroup1" checked onclick="toggleVisibility('group1')">  With GLS/Regulatory
+        </label>
+      </li>
+      <li style="margin-right: 30px;">
+       <label class="label-group2">
+       <input type="checkbox" id="toggleGroup2" checked onclick="toggleVisibility('group2')">  Approved/Slated to start
+       </label>      
+      </li>
+      <li style="margin-right: 30px;">
+       <label class="label-group3">
+       <input type="checkbox" id="toggleGroup3" checked onclick="toggleVisibility('group3')">  Active
+       </label>     
+      </li>
+      <li style="margin-right: 30px;">
+        <label class="label-group4">
+        <input type="checkbox" id="toggleGroup4" checked onclick="toggleVisibility('group4')">  Paused
+        </label>        
+      </li>
+      <li style="margin-right: 30px;">
+        <label class="label-group5">
+        <input type="checkbox" id="toggleGroup5" checked onclick="toggleVisibility('group5')">  Sunset
+        </label>      
+      </li>
+    </ul>
+    </h3>
+  </nav>
+</div>
+<br>
+
+<table id="dataTable" border="3" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>COE Unit</th>
+      <th>Program</th>
+      <th><a href="../CAMPUSES/Arlington/arlington.html"  target="_new"> Arlington, VA </a></th>
+      <th><a href="../CAMPUSES/Charlotte/charlotte.html"  target="_new"> Charlotte, NC </a></th>
+      <th><a href="../CAMPUSES/London/london.html"  target="_new"> London, UK </a></th>
+      <th><a href="../CAMPUSES/Miami/miami.html"  target="_new"> Miami, FL </a></th>
+      <th> New York, NY </th>
+      <th><a href="../CAMPUSES/Oakland/oakland.html"  target="_new" > Oakland, CA </a></th>
+      <th><a href="../CAMPUSES/Portland/portland.html"  target="_new"> Portland, ME </a></th>
+      <th><a href="../CAMPUSES/Seattle/seattle.html"  target="_new"> Seattle, WA </a></th>
+      <th><a href="../CAMPUSES/Silicon Valley/silicon valley.html"  target="_new"> Silicon Valley, CA </a></th>
+      <th><a href="../CAMPUSES/Toronto/toronto.html"  target="_new"> Toronto, ON </a></th>
+      <th><a href="../CAMPUSES/Vancouver/vancouver.html"  target="_new"> Vancouver, BC </a></th>
+      <th><a href="https://www.ucd.ie"  target="_new"> UCD </a></th>
+      <th style="background-color: #f2f2f2;"><a href="https://www.ucd.ie"  target="_new"> Total Enrollment by Program </a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href = "https://bioe.northeastern.edu" target="_new"><b>BIOE</b></a></td>
+      <td><a href = "https://bioe.northeastern.edu/academics/graduate-studies/ms-bion/" target="_new">MS Bioengineering</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td  style="text-align: center;" class="group1">S2024/F2026</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href = "https://bioe.northeastern.edu/academics/graduate-studies/phd-bion/" target="_new">PhD Bioengineering</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="text-align: center;" class="group3">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href = "https://che.northeastern.edu" target="_new"><b>CHME</b></a></td>
+      <td><a href = "https://che.northeastern.edu/academics/graduate-studies/ms-chme/" target="_new">MS Chemical Engineering</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href = "https://che.northeastern.edu/academics/graduate-studies/phd-chme/" target="_new">PhD Chemical Engineering</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href = "https://cee.northeastern.edu" target="_new"><b>CEE</b></a></td>
+      <td><a href = "https://cee.northeastern.edu/academics/graduate-studies/ms-cive/" target="_new">MS Civil Engineering</a>. Conc.  
+        <a href = "https://catalog.northeastern.edu/graduate/engineering/civil-environmental/civil-engineering-concentration-construction-management-mscive/" target="_new">Construction Management</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td   style="text-align: center;" class="group1">S2024/F2026</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+       <tr>
+      <td></td>
+      <td><a href = "" target="_new">MS Sustainability Engineering Leadership</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href = "https://cee.northeastern.edu/academics/graduate-studies/phd-cive/" target="_new">PhD Civil and Environmental Engineering</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href = "https://ece.northeastern.edu/" target="_new"><b>ECE</b></a></td>
+      <td><a href = "https://ece.northeastern.edu/academics/graduate-studies/ms-elee/" target="_new">MS Electrical and Computer Engineering</a>. Conc. 
+      	<a href = "https://catalog.northeastern.edu/graduate/engineering/electrical-computer/computer-vision-machine-learning-algorithms/" target="_new">CVLA</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="text-align: center;" class="group3">20</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+    <tr>
+    <td></td>
+      <td><a href = "https://ece.northeastern.edu/academics/graduate-studies/ms-elee/" target="_new">MS Electrical and Computer Engineering</a>. Conc.  
+	<a href = "https://catalog.northeastern.edu/graduate/engineering/electrical-computer/electrical-computer-engineering-concentration-hardware-software-marchine-intelligence-msece/" target="_new">HSMI</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="text-align: center;" class="group3">7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+     <td></td>
+      <td><a href = "https://ece.northeastern.edu/academics/graduate-studies/ms-elee/" target="_new">MS Electrical and Computer Engineering</a>. Conc. 
+      	<a href = "https://catalog.northeastern.edu/graduate/engineering/electrical-computer/computer-networks-security/" target="_new">CNWS</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="text-align: center;" class="group5">F2022-F2023</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+
+   <tr>
+      <td></td>
+      <td><a href = "https://coe.northeastern.edu/academic-programs/ms-robo/" target="_new">MS Robotics</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="text-align: center;" class="group2">F2025</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href = "https://coe.northeastern.edu/academic-programs/ms-scde/" target="_new">MS Semiconductor Engineering</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="text-align: center;" class="group1">F2024/F2026</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+      <td></td>
+      <td><a href = "https://ece.northeastern.edu/academics/graduate-studies/phd-cmpe/" target="_new">PhD Computer Engineering</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="text-align: center;" class="group4">F2024 </td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href = "https://ece.northeastern.edu/academics/graduate-studies/phd-elee/" target="_new">PhD Electrical Engineering</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="text-align: center;" class="group2">S2025</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+       <tr>
+      <td><a href = "https://mie.northeastern.edu" target="_new"><b>MIE</b></a></td>
+      <td><a href = "https://mie.northeastern.edu/academics/graduate-studies/ms-daae/" target="_new">MS Data Analytics Engineering</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="text-align: center;" class="group3">46</td>
+      <td></td>
+      <td style="text-align: center;" class="group4">F2024</td>
+      <td style="text-align: center;" class="group3">56</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href = "https://mie.northeastern.edu/academics/graduate-studies/ms-engm/" target="_new">MS Engineering Management</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href = "https://mie.northeastern.edu/academics/graduate-studies/phd-inde/" target="_new">PhD Industrial Engineering</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href = "https://mie.northeastern.edu/academics/graduate-studies/phd-mece/" target="_new">PhD Mechanical Engineering</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href = "https://coe.northeastern.edu/academics-experiential-learning/academic-departments/mgen/" target="_new"><b>MGEN</b></a></td>
+      <td><a href = "https://coe.northeastern.edu/academics-experiential-learning/academic-departments/mgen/ms-cyps/" target="_new">MS Cyber-Physical Systems</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="text-align: center;" class="group3">2</td>
+      <td style="text-align: center;" class="group3">18</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href = "https://coe.northeastern.edu/academics-experiential-learning/academic-departments/mgen/ms-daam/" target="_new">MS Data Architecture and Management</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="text-align: center;" class="group3">11</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href = "https://coe.northeastern.edu/academics-experiential-learning/academic-departments/mgen/ms-insy/" target="_new">MS Information Systems</a></td>
+      <td style="text-align: center;" class="group3">24</td>
+      <td></td>
+      <td></td>
+      <td style="text-align: center;" class="group3">4</td>
+      <td></td>
+      <td style="text-align: center;" class="group3">60</td>
+      <td></td>
+      <td style="text-align: center;" class="group3">152</td>
+      <td style="text-align: center;" class="group3">92</td>
+      <td style="text-align: center;" class="group3">119</td>
+      <td style="text-align: center;" class="group3">21</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href = "https://coe.northeastern.edu/academics-experiential-learning/academic-departments/mgen/ms-insy-bridge/" target="_new">MS Information Systems-Bridge</a></td>
+      <td style="text-align: center;" class="group3">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="text-align: center;" class="group3">19</td>
+      <td></td>
+      <td style="text-align: center;" class="group3">117</td>
+      <td style="text-align: center;" class="group3">73</td>
+      <td style="text-align: center;" class="group3">5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href = "https://coe.northeastern.edu/academics-experiential-learning/academic-departments/mgen/ms-swes/" target="_new">MS Software Engineering Systems</a></td>
+      <td style="text-align: center;" class="group3">8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href = "https://catalog.northeastern.edu/graduate/engineering/multidisciplinary/blockchain-smart-contract-engineering-graduate-certificate/?_gl=1*1pn0zpo*_gcl_au*MjA3MTE5MjAyNy4xNzI3MDQwMzU0#text" target="_new">CERT Blockchain and Smart Contract Engineering</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href = "https://coe.northeastern.edu/academics-experiential-learning/academic-departments/mgen/cert-swes/" target="_new">CERT Software Engineering Systems</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href = "" target="_new"><b>IntrDisc</b></a></td>
+      <td><a href = "https://coe.northeastern.edu/academic-programs/phd-inte/" target="_new">PhD Interdisciplinary Engineering</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td></td>
+      <td style="text-align: left;"><b>Total Enrollment by Campus<b></td>
+      <td id="ARL-Sum">0</td>
+      <td id="CHA-Sum">0</td>
+      <td id="LON-Sum">0</td>
+      <td id="MIA-Sum">0</td>
+      <td id="NYC-Sum">0</td>
+      <td id="OAK-Sum">0</td>
+      <td id="POR-Sum">0</td>
+      <td id="SEA-Sum">0</td>
+      <td id="SVX-Sum">0</td>
+      <td id="TOR-Sum">0</td>
+      <td id="VAN-Sum">0</td>
+      <td id="UCD-Sum">0</td>
+      <td id="TBP-Sum">0</td>
+    </tr>
+  </tfoot>
+</table>
+
+<br>
+
+<div class="background-box">
+  <h3>Program Status Keys</h3>  
+  <ul>
+    <li>
+      <label class="label-group1">
+        With GLS/Regulatory: <span class="explanation">Indicates a program that has been submitted to GLS (senior leadership) or to the appropriate regulator for approval. Reports the dates of initial submission and of desired start.</span>
+      </label>
+    </li>
+    <li>
+      <label class="label-group2">
+        Approved/Slated to start: <span class="explanation">Indicates a program that has been approved by GLS and by the appropriate regulator. Reports the date of expected start.</span>
+      </label>
+    </li>
+    <li>
+      <label class="label-group3">
+        Active: <span class="explanation">Indicates an active program. Reports the total number of students currently enrolled.</span>
+      </label>
+    </li>
+    <li>
+      <label class="label-group4">
+        Paused: <span class="explanation">Indicates a program that has been paused at any time during the approval process. Reports the date of the when the program has been paused.</span>
+      </label>
+    </li>
+    <li>
+      <label class="label-group5">
+        Sunset: <span class="explanation">Indicates a program that is no longer active. Reports the starting and sunset dates.</span>
+      </label>
+    </li>
+    <li style="list-style-type: none; margin-left: -20px;"><p>
+      Any program in this table is being considered, or was considered at some point in time, for expansion to the campuses of the global network.
+    </li>
+    <li style="list-style-type: none; margin-left: -20px;">
+      F = Fall; S = Spring; Su = Summer
+    </li>
+  </ul>
+</div>
+
+<br><br><br>
+<div>
+  <p class="is-style-eyebrow is-style-menu-title has-white-color has-text-color"><b>Northeastern Campus Locations</b></p>
+  <nav aria-label="Campus Locations">
+    <ul style="display: flex; list-style: none; padding: 0;">
+      <li style="margin-right: 20px;"><a href="https://arlington.northeastern.edu/" target="_blank">Arlington<br><span>VA</span></a></li>
+      <li style="margin-right: 20px;"><a href="https://www.northeastern.edu/campuses/boston/">Boston<br><span>MA</span></a></li>
+      <li style="margin-right: 20px;"><a href="https://www.burlington.northeastern.edu/" target="_blank">Burlington<br><span>MA</span></a></li>
+      <li style="margin-right: 20px;"><a href="https://charlotte.northeastern.edu/" target="_blank">Charlotte<br><span>NC</span></a></li>
+      <li style="margin-right: 20px;"><a href="https://www.nulondon.ac.uk/" target="_blank">London<br><span>UK</span></a></li>
+      <li style="margin-right: 20px;"><a href="https://miami.northeastern.edu/" target="_blank">Miami<br><span>FL</span></a></li>
+      <li style="margin-right: 20px;"><a href="https://csi.northeastern.edu/" target="_blank">Nahant<br><span>MA</span></a></li>
+      <li style="margin-right: 20px;"><a href="https://oakland.northeastern.edu/" target="_blank">Oakland<br><span>CA</span></a></li>
+      <li style="margin-right: 20px;"><a href="https://roux.northeastern.edu/" target="_blank">Portland<br><span>ME</span></a></li>
+      <li style="margin-right: 20px;"><a href="https://seattle.northeastern.edu/" target="_blank">Seattle<br><span>WA</span></a></li>
+      <li style="margin-right: 20px;"><a href="https://siliconvalley.northeastern.edu/" target="_blank">Silicon Valley<br><span>CA</span></a></li>
+      <li style="margin-right: 20px;"><a href="https://toronto.northeastern.edu/" target="_blank">Toronto<br><span>ON</span></a></li>
+      <li style="margin-right: 20px;"><a href="https://vancouver.northeastern.edu/" target="_blank">Vancouver<br><span>BC</span></a></li>
+    </ul>
+  </nav>
+</div>
+<br><br><br>
+
+<script>
+  // JavaScript function to toggle visibility of table cell content by group
+  function toggleVisibility(groupClass) {
+    const content = document.querySelectorAll('.' + groupClass);
+    content.forEach(cellContent => {
+      if (document.getElementById('toggle' + groupClass.charAt(0).toUpperCase() + groupClass.slice(1)).checked) {
+        cellContent.classList.remove('hidden-content'); // Show content
+      } else {
+        cellContent.classList.add('hidden-content'); // Hide content
+      }
+    });
+  }
+</script>
+
+<script>
+  let grandTotal = 0; // Initialize a variable to store the grand total
+
+  // Function to calculate the sum for any column based on the .group3 class
+  function calculateColumnSum(columnIndex, sumElementId) {
+    let table = document.getElementById('dataTable');
+    let rows = table.getElementsByTagName('tbody')[0].rows;
+    let sum = 0;
+
+    // Loop through each row and calculate the sum of valid numbers in .group3 class
+    for (let i = 0; i < rows.length; i++) {
+      let cell = rows[i].cells[columnIndex];
+      if (cell && cell.classList.contains('group3')) {
+        let cellText = cell.innerText.trim();
+        let cellValue = parseInt(cellText); // Parse as integer
+
+        // Only add if the value is a valid number
+        if (!isNaN(cellValue)) {
+          sum += cellValue;
+        }
+      }
+    }
+
+    // Display the sum only if it's greater than 0, otherwise set to an empty string
+    let sumElement = document.getElementById(sumElementId);
+    sumElement.innerText = sum > 0 ? sum : ''; // Hide zero values
+  }
+
+  // Function to calculate the sum for cells with .group3 in the same row and accumulate grand total
+  function calculateRowSum(rowIndex, totalCellIndex) {
+    let table = document.getElementById('dataTable');
+    let rows = table.getElementsByTagName('tbody')[0].rows;
+    let row = rows[rowIndex]; // Get the specific row by index
+    let sum = 0;
+
+    // Loop through all cells in the row
+    for (let i = 0; i < row.cells.length; i++) {
+      let cell = row.cells[i];
+
+      // Check if the cell has the .group3 class
+      if (cell.classList.contains('group3')) {
+        let cellText = cell.innerText.trim();
+        let cellValue = parseInt(cellText); // Parse as integer
+
+        // Only add if the value is a valid number
+        if (!isNaN(cellValue)) {
+          sum += cellValue;
+          grandTotal += cellValue; // Accumulate grand total here (only in rows)
+        }
+      }
+    }
+
+    // Display the sum only if it's greater than 0, otherwise set to an empty string
+    row.cells[totalCellIndex].innerText = sum > 0 ? sum : '';
+  }
+
+  // Function to display the grand total in the intersection of the last row and last column of the footer
+  function displayGrandTotal() {
+    let footer = document.querySelector('tfoot tr');
+    let lastCell = footer.cells[footer.cells.length - 1];
+
+    // Set the grand total in the last footer cell
+    lastCell.innerText = grandTotal > 0 ? grandTotal : '';
+  }
+
+  // Automatically calculate column and row sums when the page loads
+  window.onload = function() {
+    // Reset grand total before recalculating
+    grandTotal = 0;
+
+    // Calculate column sums
+    calculateColumnSum(2, 'ARL-Sum'); 
+    calculateColumnSum(3, 'CHA-Sum');   
+    calculateColumnSum(4, 'LON-Sum'); 
+    calculateColumnSum(5, 'MIA-Sum'); 
+    calculateColumnSum(6, 'NYC-Sum');   
+    calculateColumnSum(7, 'OAK-Sum'); 
+    calculateColumnSum(8, 'POR-Sum'); 
+    calculateColumnSum(9, 'SEA-Sum');   
+    calculateColumnSum(10, 'SVX-Sum');   
+    calculateColumnSum(11, 'TOR-Sum'); 
+    calculateColumnSum(12, 'VAN-Sum');   
+    calculateColumnSum(13, 'UCD-Sum');
+    calculateColumnSum(14, 'TBP-Sum');   
+
+    // Calculate row sums and accumulate grand total
+    let table = document.getElementById('dataTable');
+    let rows = table.getElementsByTagName('tbody')[0].rows;
+    
+    // Loop through each row to calculate the row sum and display it in the last column
+    for (let i = 0; i < rows.length; i++) {
+      calculateRowSum(i, rows[i].cells.length - 1); // Assuming the "Total by Program" column is the last one
+    }
+
+    // Display the grand total at the intersection of the last footer row and last column
+    displayGrandTotal();
+  };
+</script>
+
+</body>
+</html>
