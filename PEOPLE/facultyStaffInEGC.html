@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty and Staff of the EGC</title>
+
+<!-- Link to external CSS file -->
+  <link rel="stylesheet" href="gec-styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .campus {
+            margin-bottom: 30px;
+        }
+        .campus-header {
+ 	   background-color: #f2f2f2;  /* Light gray background */
+	   text-align: center;         /* Center the text */
+           padding: 25px;              /* Adds space around the text */
+           margin-bottom: 5px;        /* Adds space below the campus header */
+         }
+         .campus-header h2 {
+           margin-bottom: -10px;  /* Use negative margin to decrease space */
+         }
+        .campus-address {
+    	  font-size: 1.1em;    /* Makes the font slightly smaller */
+          color: #555;         /* Optional: Subtle gray color */
+          margin-bottom: 15px; 
+         }
+        .faculty-group, .staff-group {
+            margin-bottom: 20px;
+        }
+        .faculty-group h3, .staff-group h3 {
+            text-align: left;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+        .tile {
+            display: flex;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 15px;
+            align-items: center;
+            font-size: 0.9em;
+        }
+        .tile img {
+          width: 100px;  /* Adjust the size as needed */
+          height: auto; /* Same height for a square shape */
+          object-fit: cover; /* Ensures the image fills the square without distortion */
+          margin-right: 15px;
+        }
+        .faculty-tile.research-active {
+            background-color: #d1e7dd; /* Light green for research-active faculty */
+        }
+        .faculty-tile.coop {
+            background-color: #f8d7da; /* Light pink for coop faculty */
+        }
+        .teaching-faculty {
+            background-color: #d1e7f3; /* Light blue for teaching faculty */
+        }
+        .tile-info {
+            flex-grow: 1;
+            font-size: 18px; /* You can adjust the size in pixels, e.g., 18px */
+        }
+        .tile-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .tile-info a:hover {
+            text-decoration: underline;
+        }
+        .tile-info strong {
+            font-size: 1.1em;
+        }
+        
+      /* Style for the background box */
+     .background-box {
+      background-color: #00274C; /* Dark background color */
+      color: white; /* White text for better contrast */
+      padding: 20px; /* Add some padding around the content */
+      border-radius: 10px; /* Rounded corners for aesthetics */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+     }
+    </style>
+</head>
+
+<body>
+
+<br><br>
+<h1 style="text-align:center;">Faculty and Staff of the <a href = "../index.html">Engineering Global Campus</a></h1>
+
+<br><br>
+<p style="font-size: 1.3em; font-weight: normal; padding-left: 10px;">
+This page lists the leadership of the Global Engineering Campus and all full-time faculty and staff, listed by campus. 
+
+As of Spring 2025, there are 31 faculty and 11 staff in the Global Engineering Campus (8 locations).
+</p>
+
+<br><br>
+<div class="background-box">
+  <h3>Keys</h3>  
+  <ul>
+    <li style="list-style-type: none; margin-left: -20px;"><p>
+      Teaching faculty are listed with a light blue background.
+    </li>
+    <li style="list-style-type: none; margin-left: -20px;"><p>
+      Research active faculty are listed with a light green background.
+    </li>
+    <li style="list-style-type: none; margin-left: -20px;"><p>
+      Coop faculty are listed with a light pink background.
+    </li>
+  </ul>
+</div>
+
+<br><br>
+<!-- Leadership, Boston Campus -->
+<div class="campus">
+    <div class="campus-header">
+      <h2><a href = "../index.html">Global Engineering Network Leadership</a></h2>
+      <p class="campus-address">Snell Engineering, 360 Huntington Ave, Boston, MA 02115, +1 (617) 373-6300</p>
+    </div>
+  <br>  
+    <div class="faculty-group">
+        <h3>Faculty</h3>
+        <div class="tile faculty-tile research-active">
+            <img src="../pics/basagni-s.jpg" alt="Stefano Basagni">
+            <div class="tile-info">
+                <strong>Stefano Basagni</strong><br>
+                Professor<br>
+                E-mail: <a href="mailto:s.basagni@northeastern.edu">s.basagni@northeastern.edu</a><br>
+                Supervisory Organization: COE (Gregory Abowd)<br>
+                Position Start Date: 7/1/24
+            </div>
+        </div>
+    </div>
+
+    <div class="staff-group">
+        <h3>Staff</h3>
+        <div class="tile">
+            <img src="../pics/nelson-j.jpg" alt="Jennifer Nelson">
+            <div class="tile-info">
+                <strong>Jennifer Nelson</strong><br>
+                Business Title: Associate Director of Global Operations<br>
+                E-mail: <a href="mailto:j.nelson@northeastern.edu">j.nelson@northeastern.edu</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+<!-- Arlington Campus -->
+<div class="campus">
+    <div class="campus-header">
+      <h2><a href = "https://arlington.northeastern.edu">Arlington Campus</a></h2>
+      <p class="campus-address">Arlington Tower, Suite 1500, 1300 17th Street North, Arlington, VA 22209, +1 (571) 206-8719</p>
+    </div>
+  <br>  
+    <div class="faculty-group">
+        <h3>Faculty</h3>
+        <div class="tile faculty-tile teaching-faculty">
+            <img src="../pics/claster-w.jpg" alt="William Claster">
+            <div class="tile-info">
+                <strong>William "Bill" Claster</strong><br>
+                Associate Teaching Professor<br>
+                E-mail: <a href="mailto:w.claster@northeastern.edu">w.claster@northeastern.edu</a><br>
+                Supervisory Organization: MGEN (Kal Bugrara)<br>
+                Position Start Date: 8/21/23
+            </div>
+        </div>
+    </div>
+
+    <div class="staff-group">
+        <h3>Staff</h3>
+        <div class="tile">
+            <img src="../pics/leslie-t.jpg" alt="Tyler Leslie">
+            <div class="tile-info">
+                <strong>Tyler Leslie</strong><br>
+                Academic Advisor & Program Manager<br>
+                E-mail: <a href="mailto:t.leslie@northeastern.edu">t.leslie@northeastern.edu</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+<!-- Miami Campus -->
+<div class="campus">
+    <div class="campus-header">
+       <h2><a href = "https://miami.northeastern.edu">Miami Campus</a></h2>
+       <p class="campus-address">230 NW 24th Street, 5th floor, Miami, FL 33127, +1 (305) 990-2763</p>
+    </div> 
+  <br>     
+    <div class="faculty-group">
+        <h3>Faculty</h3>
+        <div class="tile faculty-tile teaching-faculty">
+            <img src="../pics/hamed-a.jpg" alt="Ahmed Abdeen Hamed">
+            <div class="tile-info">
+                <strong>Ahmed Abdeen Hamed</strong><br>
+                Assistant Teaching Professor<br>
+                E-mail: <a href="mailto:a.hamed@northeastern.edu">a.hamed@northeastern.edu</a><br>
+                Supervisory Organization: MGEN (Kal Bugrara)<br>
+                Position Start Date: 8/19/24
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+<!-- Oakland Campus -->
+<div class="campus">
+     <div class="campus-header">
+      <h2><a href = "https://oakland.northeastern.edu">Oakland Campus</a></h2>
+       <p class="campus-address">5000 MacArthur Boulevard, Oakland, CA 94613, +1 (510) 430-2255</p>
+    </div> 
+ <br>    
+    <div class="faculty-group">
+        <h3>Faculty</h3>
+             <div class="tile faculty-tile teaching-faculty">
+            <img src="../pics/sergeyAityan.jpg" alt="Sergey Aityan">
+            <div class="tile-info">
+                <strong>Sergey Aityan</strong><br>
+                Teaching Professor<br>
+                E-mail: <a href="mailto:s.aityan@northeastern.edu">s.aityan@northeastern.edu</a><br>
+                Supervisory Organization: MGEN (Kal Bugrara)<br>
+                Position Start Date: 1/16/24
+            </div>
+        </div>
+             
+        <div class="tile faculty-tile research-active">
+            <img src="../pics/davidHorsley.jpg" alt="David Horsley">
+            <div class="tile-info">
+                <strong>David Horsley</strong><br>
+                Professor<br>
+                E-mail: <a href="mailto:d.horsley@northeastern.edu">d.horsley@northeastern.edu</a><br>
+                Supervisory Organization: Electrical and Computer Engineering (Josep Jornet)<br>
+                Position Start Date: 7/1/23
+            </div>
+        </div>
+
+        <div class="tile faculty-tile teaching-faculty">
+            <img src="../pics/leilaKeyvaniSomeh.jpg" alt="Leila Keyvani Someh">
+            <div class="tile-info">
+                <strong>Leila Keyvani Someh</strong><br>
+                Associate Teaching Professor<br>
+                E-mail: <a href="mailto:l.keyvani@northeastern.edu">l.keyvani@northeastern.edu</a><br>
+                Supervisory Organization: COE-Undergrad First Year Program (Richard Whalen)<br>
+                Position Start Date: 8/29/16
+            </div>
+        </div>
+
+        <div class="tile faculty-tile teaching-faculty">
+            <img src="../pics/abdolrezaMosaddegh.jpg" alt="Abdolreza Mosaddegh">
+            <div class="tile-info">
+                <strong>Abdolreza Mosaddegh</strong><br>
+                Assistant Teaching Professor<br>
+                E-mail: <a href="mailto:a.mosaddegh@northeastern.edu">a.mosaddegh@northeastern.edu</a><br>
+                Supervisory Organization: MGEN (Kal Bugrara)<br>
+                Position Start Date: 1/1/24
+            </div>
+        </div>
+
+        <div class="tile faculty-tile research-active">
+            <img src="../pics/nagulu-a.jpg" alt="David Horsley">
+            <div class="tile-info">
+                <strong>Aravind Nagulu</strong><br>
+                Assistant Professor<br>
+                E-mail: <a href="mailto:a.nagulu@northeastern.edu">a.nagulu@northeastern.edu</a><br>
+                Supervisory Organization: Electrical and Computer Engineering (Josep Jornet)<br>
+                Position Start Date: 2/1/25
+            </div>
+        </div>
+
+        <div class="tile faculty-tile research-active">
+            <img src="../pics/yuan-y.png" alt="David Horsley">
+            <div class="tile-info">
+                <strong>Yuan Yuan</strong><br>
+                Assistant Professor<br>
+                E-mail: <a href="mailto:y.yuan@northeastern.edu">y.yuan@northeastern.edu</a><br>
+                Supervisory Organization: Electrical and Computer Engineering (Josep Jornet)<br>
+                Position Start Date: 2/1/25
+            </div>
+        </div>
+    </div>
+
+    <div class="staff-group">
+        <h3>Staff</h3>
+        <div class="tile">
+            <img src="../pics/samanthaSnow.jpg" alt="Samantha Snow">
+            <div class="tile-info">
+                <strong>Samantha Snow</strong><br>
+                Business Title: Academic Advisor & Program Manager SEIU<br>
+                E-mail: <a href="mailto:coe-oakland-gradadvising@northeastern.edu">coe-oakland-gradadvising@northeastern.edu</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+<!-- Portland Campus -->
+<div class="campus">
+     <div class="campus-header">
+      <h2><a href = "https://roux.northeastern.edu">Roux Institute-Portland Campus</a></h2>
+       <p class="campus-address">100 Fore Street, Portland, ME 04101, +1 (207) 376 9960</p>
+    </div> 
+<br>
+    <div class="faculty-group">
+        <h3>Faculty</h3>
+        <div class="tile faculty-tile research-active">
+            <img src="../pics/amal-s.jpg" alt="Saeed Amal">
+            <div class="tile-info">
+                <strong>Saeed Amal</strong><br>
+                Assistant Research Professor<br>
+                E-mail: <a href="mailto:s.amal@northeastern.edu">s.amal@northeastern.edu</a><br>
+                Supervisory Organization: Bioengineering (Abraham Joy)<br>
+                Position Start Date: 10/15/21
+            </div>
+        </div>
+
+        <div class="tile faculty-tile research-active">
+            <img src="../pics/huang-saad-a.jpg" alt="Aileen Huang-Saad">
+            <div class="tile-info">
+                <strong>Aileen Huang-Saad</strong><br>
+                Associate Professor<br>
+                E-mail: <a href="mailto:a.huang-saad@northeastern.edu">a.huang-saad@northeastern.edu</a><br>
+                Supervisory Organization: Bioengineering (Abraham Joy)<br>
+                Position Start Date: 2/15/21
+            </div>
+        </div>
+
+        <div class="tile faculty-tile research-active">
+            <img src="../pics/lesko-j.jpg" alt="Jack Lesko">
+            <div class="tile-info">
+                <strong>Jack Lesko</strong><br>
+                Professor<br>
+                E-mail: <a href="mailto:j.lesko@northeastern.edu">j.lesko@northeastern.edu</a><br>
+                Supervisory Organization: Mechanical + Industrial Engineering (Yingzi Lin)<br>
+                Position Start Date: 7/1/21
+            </div>
+        </div>
+
+       <div class="tile faculty-tile research-active">
+            <img src="../pics/neils-a.jpg" alt="Andrew Neils">
+            <div class="tile-info">
+                <strong>Andrew Neils</strong><br>
+                Assistant Research Professor<br>
+                E-mail: <a href="mailto:a.neils@northeastern.edu">a.neils@northeastern.edu</a><br>
+                Supervisory Organization: Mechanical + Industrial Engineering (Yingzi Lin)<br>
+                Position Start Date: 3/1/24
+            </div>
+        </div>
+
+        <div class="tile faculty-tile research-active">
+            <img src="../pics/post-n.jpg" alt="Nathan Post">
+            <div class="tile-info">
+                <strong>Nathan Post</strong><br>
+                Associate Research Professor<br>
+                E-mail: <a href="mailto:n.post@northeastern.edu">n.post@northeastern.edu</a><br>
+                Supervisory Organization: Civil and Environmental Engineering (Jerome Hajjar)<br>
+                Position Start Date: 2/28/22
+            </div>
+        </div>
+
+        <div class="tile faculty-tile research-active">
+            <img src="../pics/rolle-m.jpg" alt="Marsha Rolle">
+            <div class="tile-info">
+                <strong>Marsha Rolle</strong><br>
+                Research Professor<br>
+                E-mail: <a href="mailto:m.rolle@northeastern.edu">m.rolle@northeastern.edu</a><br>
+                Supervisory Organization: Chemical Engineering (Rebecca Willits)<br>
+                Position Start Date: 7/1/23
+            </div>
+        </div>
+
+        <div class="tile faculty-tile research-active">
+            <img src="../pics/vanaja-k.jpg" alt="Kiran Vanaja">
+            <div class="tile-info">
+                <strong>Kiran Vanaja</strong><br>
+                Assistant Research Professor<br>
+                E-mail: <a href="mailto:k.vanaja@northeastern.edu">k.vanaja@northeastern.edu</a><br>
+                Supervisory Organization: Bioengineering (Abraham Joy)<br>
+                Position Start Date: 9/1/22
+            </div>
+        </div>
+
+        <div class="tile faculty-tile research-active">
+            <img src="../pics/winslow-r.jpg" alt="Rai Winslow">
+            <div class="tile-info">
+                <strong>Rai Winslow</strong><br>
+                Professor<br>
+                E-mail: <a href="mailto:r.winslow@northeastern.edu">r.winslow@northeastern.edu</a><br>
+                Supervisory Organization: Bioengineering (Abraham Joy)<br>
+                Position Start Date: 5/1/21
+            </div>
+        </div>
+    </div>
+
+    <div class="staff-group">
+        <h3>Staff</h3>
+        <div class="tile">
+            <img src="../pics/amraee-s.jpg" alt="Somaieh Amraee">
+            <div class="tile-info">
+                <strong>Somaieh Amraee</strong><br>
+                Business Title: Postdoctoral Research Fellow<br>
+                E-mail: <a href="mailto:s.amraee@northeastern.edu">s.amraee@northeastern.edu</a>
+            </div>
+        </div>
+
+        <div class="tile">
+            <img src="../pics/milosevic-m.jpg" alt="Marko Milosevic">
+            <div class="tile-info">
+                <strong>Marko Milosevic</strong><br>
+                Business Title: Postdoctoral Research Fellow<br>
+                E-mail: <a href="mailto:m.milosevic@northeastern.edu">m.milosevic@northeastern.edu</a>
+            </div>
+        </div>
+
+        <div class="tile">
+            <img src="../pics/ray-a.jpg" alt="Arnob Ray">
+            <div class="tile-info">
+                <strong>Arnob Ray</strong><br>
+                Business Title: Postdoctoral Research Fellow<br>
+                E-mail: <a href="mailto:ar.ray@northeastern.edu">ar.ray@northeastern.edu</a>
+            </div>
+        </div>
+
+        <div class="tile">
+            <img src="../pics/saha-d.jpg" alt="Dipanjan Saha">
+            <div class="tile-info">
+                <strong>Dipanjan Saha</strong><br>
+                Business Title: Associate Research Scientist<br>
+                E-mail: <a href="mailto:d.saha@northeastern.edu">d.saha@northeastern.edu</a>
+            </div>
+        </div>
+
+        <div class="tile">
+            <img src="../pics/zeng-c.jpg" alt="Cheng Zeng">
+            <div class="tile-info">
+                <strong>Cheng Zeng</strong><br>
+                Business Title: Postdoctoral Research Fellow<br>
+                E-mail: <a href="mailto:c.zeng@northeastern.edu">c.zeng@northeastern.edu</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+<!-- Seattle Campus -->
+<div class="campus">
+  <div class="campus-header">
+    <h2><a href = "https://seattle.northeastern.edu">Seattle Campus</a></h2>
+       <p class="campus-address">401 Terry Ave N #103, Seattle, WA 98109, +1 (206) 467-5480</p>
+    </div> 
+<br>
+    <div class="faculty-group">
+        <h3>Faculty</h3>
+        <div class="tile faculty-tile coop">
+            <img src="../pics/evans-j.jpg" alt="Jennifer Evans">
+            <div class="tile-info">
+                <strong>Jennifer Evans</strong><br>
+                Assistant Coop Coordinator<br>
+                E-mail: <a href="mailto:ka.wong@northeastern.edu">jen.evans@northeastern.edu</a><br>
+                Supervisory Organization: In Network COE (Terri Gu)<br>
+                Position Start Date: 9/18/23
+            </div>
+        </div>
+
+        <div class="tile faculty-tile coop">
+            <img src="../pics/gu-t.jpg" alt="Terri Gu">
+            <div class="tile-info">
+                <strong>Terri Gu</strong><br>
+                Assistant Coop Coordinator<br>
+                E-mail: <a href="mailto:y.gu@northeastern.edu">y.gu@northeastern.edu</a><br>
+                Supervisory Organization: MGEN Coop (Laura Meyer)<br>
+                Position Start Date: 3/28/22
+            </div>
+        </div>
+         
+        <div class="tile faculty-tile teaching-faculty">
+            <img src="../pics/guschin-a.jpg" alt="Andrei Guschin">
+            <div class="tile-info">
+                <strong>Andrei Guschin</strong><br>
+                Associate Teaching Professor<br>
+                E-mail: <a href="mailto:a.guschin@northeastern.edu">a.guschin@northeastern.edu</a><br>
+                Supervisory Organization: Mechanical + Industrial Engineering (Yingzi Lin)<br>
+                Position Start Date: 8/28/17
+            </div>
+        </div>
+
+        <div class="tile faculty-tile research-active">
+            <img src="../pics/hariharan-r.jpg" alt="Ram Hariharan">
+            <div class="tile-info">
+                <strong>Ram Hariharan</strong><br>
+                Associate Teaching Professor<br>
+                E-mail: <a href="mailto:r.hariharan@northeastern.edu">r.hariharan@northeastern.edu</a><br>
+                Supervisory Organization: Electrical and Computer Engineering (Stefano Basagni)<br>
+                Position Start Date: 8/23/21
+            </div>
+        </div>
+
+        <div class="tile faculty-tile teaching-faculty">
+            <img src="../pics/weber-j.jpg" alt="Joe Weber">
+            <div class="tile-info">
+                <strong>Joseph Weber</strong><br>
+                Associate Teaching Professor<br>
+                E-mail: <a href="mailto:jo.weber@northeastern.edu">jo.weber@northeastern.edu</a><br>
+                Supervisory Organization: Electrical and Computer Engineering (Josep Jornet)<br>
+                Position Start Date: 8/21/23
+            </div>
+        </div>
+
+        <div class="tile faculty-tile coop">
+            <img src="../pics/wong-k.jpg" alt="Kathy Wong">
+            <div class="tile-info">
+                <strong>Kathy Wong</strong><br>
+                Assistant Coop Coordinator<br>
+                E-mail: <a href="mailto:ka.wong@northeastern.edu">ka.wong@northeastern.edu</a><br>
+                Supervisory Organization: In Network COE (Terri Gu)<br>
+                Position Start Date: 1/10/22
+            </div>
+        </div>
+    </div>
+
+    <div class="staff-group">
+        <h3>Staff</h3>
+        <div class="tile">
+            <img src="../pics/hahn-g.jpg" alt="Gretchen Hahn">
+            <div class="tile-info">
+                <strong>Gretchen Hahn</strong><br>
+                Business Title: Recruiting Specialist<br>
+                E-mail: <a href="mailto:g.hahn@northeastern.edu">g.hahn@northeastern.edu</a>
+            </div>
+        </div>
+
+        <div class="tile">
+            <img src="../pics/plavetsky-a.jpg" alt="Adrianna Plavetsky">
+            <div class="tile-info">
+                <strong>Adrianna Plavetsky</strong><br>
+                Business Title: Academic Advisor<br>
+                E-mail: <a href="mailto:a.plavetsky@northeastern.edu">a.plavetsky@northeastern.edu</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<br><br><br>
+<!-- Silicon Valley Campus -->
+<div class="campus">
+  <div class="campus-header">
+    <h2><a href = "https://siliconvalley.northeastern.edu">Silicon Valley Campus</a></h2>
+    <p class="campus-address">75 E. Santa Clara St., Suite 150, San Jose, CA 95113, +1 (408) 707-3695</p>
+ </div> 
+<br>
+    <div class="faculty-group">
+        <h3>Faculty</h3>
+        <div class="tile faculty-tile teaching-faculty">
+            <img src="../pics/alomari-r.jpg" alt="Raja Alomari">
+            <div class="tile-info">
+                <strong>Raja Alomari</strong><br>
+                Associate Teaching Professor<br>
+                E-mail: <a href="mailto:r.alomari@northeastern.edu">r.alomari@northeastern.edu</a><br>
+                Supervisory Organization: MGEN (Kal Bugrara)<br>
+                Position Start Date: 8/19/24
+            </div>
+        </div>
+
+        <div class="tile faculty-tile teaching-faculty">
+            <img src="../pics/bugrara-s.jpg" alt="Suhabe Bugrara">
+            <div class="tile-info">
+                <strong>Suhabe Bugrara</strong><br>
+                Associate Teaching Professor<br>
+                E-mail: <a href="mailto:s.bugrara@northeastern.edu">s.bugrara@northeastern.edu</a><br>
+                Supervisory Organization: Electrical and Computer Engineering (Stefano Basagni)<br>
+                Position Start Date: 8/21/23
+            </div>
+        </div>
+
+        <div class="tile faculty-tile coop">
+            <img src="../pics/hatzievgenakis-e.jpg" alt="Erica Hatzievgenakis">
+            <div class="tile-info">
+                <strong>Erica Hatzievgenakis</strong><br>
+                Associate Coop Coordinator<br>
+                E-mail: <a href="mailto:e.hatzievgenakis@northeastern.edu">e.hatzievgenakis@northeastern.edu</a><br>
+                Supervisory Organization: MGEN Coop (Laura Meyer)<br>
+                Position Start Date: 4/24/23
+            </div>
+        </div>
+    </div>
+
+    <div class="staff-group">
+        <h3>Staff</h3>
+        <div class="tile">
+            <img src="../pics/wright-k.jpg" alt="Kimberly Wright">
+            <div class="tile-info">
+                <strong>Kimberly Wright</strong><br>
+                Business Title: Academic Advisor<br>
+                E-mail: <a href="mailto:coe-sv-gradadvising@northeastern.edu">coe-sv-gradadvising@northeastern.edu</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+<!-- Toronto Campus -->
+<div class="campus">
+  <div class="campus-header">
+    <h2><a href = "https://toronto.northeastern.edu">Toronto Campus</a></h2>
+     <p class="campus-address">First Canadian Place, 100 King St. West, Suite 4620, Toronto, ON, M5X 1E2, +1 (888) 660-6938</p>
+</div> 
+<br>
+    <div class="faculty-group">
+        <h3>Faculty</h3>
+        <div class="tile faculty-tile research-active">
+            <img src="../pics/badreldin-o.jpg" alt="Omar Badreddin">
+            <div class="tile-info">
+                <strong>Omar Badreddin</strong><br>
+                Associate Teaching Professor<br>
+                E-mail: <a href="mailto:o.badreldin@northeastern.edu">o.badreldin@northeastern.edu</a><br>
+                Supervisory Organization: MGEN (Kal Bugrara)<br>
+                Position Start Date: 8/22/22
+            </div>
+        </div>
+
+        <div class="tile faculty-tile teaching-faculty">
+            <img src="../pics/zheng-z.jpg" alt="Zheng Zheng">
+            <div class="tile-info">
+                <strong>Zheng Zheng</strong><br>
+                Assistant Teaching Professor<br>
+                E-mail: <a href="mailto:zh.zheng@northeastern.edu">zh.zheng@northeastern.edu</a><br>
+                Supervisory Organization: MGEN (Kal Bugrara)<br>
+                Position Start Date: 8/19/24
+            </div>
+        </div>
+    </div>
+
+    <div class="staff-group">
+        <h3>Staff</h3>
+        <div class="tile">
+            <img src="../pics/dykes-c.jpg" alt="Colin Dykes">
+            <div class="tile-info">
+                <strong>Colin Dykes</strong><br>
+                Business Title: Asst Dir - Academic Advising<br>
+                E-mail: <a href="mailto:c.dykes@northeastern.edu">c.dykes@northeastern.edu</a>
+            </div>
+        </div>
+
+        <div class="tile">
+            <img src="../pics/irani-f.jpg" alt="Farzaneh Irani">
+            <div class="tile-info">
+                <strong>Farzaneh Irani</strong><br>
+                Business Title: Asst Dir - Academic Operations<br>
+                E-mail: <a href="mailto:f.irani@northeastern.edu">f.irani@northeastern.edu</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+<!-- Vancouver Campus -->
+<div class="campus">
+  <div class="campus-header">
+    <h2><a href = "https://vancouver.northeastern.edu">Vancouver Campus</a></h2>
+    <p class="campus-address">5000 MacArthur Boulevard, Oakland, CA 94613, +1 (510) 430-2255</p>
+</div> 
+<br>
+    <div class="faculty-group">
+        <h3>Faculty</h3>
+        <div class="tile faculty-tile teaching-faculty">
+            <img src="../pics/alsaleh-r.jpg" alt="Rushdi Alsaleh">
+            <div class="tile-info">
+                <strong>Rushdi Alsaleh</strong><br>
+                Associate Teaching Professor<br>
+                E-mail: <a href="mailto:r.alsaleh@northeastern.edu">r.alsaleh@northeastern.edu</a><br>
+                Supervisory Organization: MGEN (Kal Bugrara)<br>
+                Position Start Date: 8/19/24
+            </div>
+        </div>
+
+        <div class="tile faculty-tile teaching-faculty">
+            <img src="../pics/azim-q.jpg" alt="Qurat-ul-Ain Azim">
+            <div class="tile-info">
+                <strong>Qurat-ul-Ain Azim</strong><br>
+                Assistant Teaching Professor<br>
+                E-mail: <a href="mailto:q.azim@northeastern.edu">q.azim@northeastern.edu</a><br>
+                Supervisory Organization: Mechanical + Industrial Engineering (Yingzi Lin)<br>
+                Position Start Date: 8/28/23
+            </div>
+        </div>
+        <div class="tile faculty-tile teaching-faculty">
+            <img src="../pics/heratgedara-c.jpg" alt="Chinthaka Pathum Dinesh Herath Gedara">
+            <div class="tile-info">
+                <strong>Chinthaka Pathum Dinesh Herath Gedara</strong><br>
+                Assistant Teaching Professor<br>
+                E-mail: <a href="mailto:c.herathgedara@northeastern.edu">c.herathgedara@northeastern.edu</a><br>
+                Supervisory Organization: Mechanical + Industrial Engineering (Yingzi Lin)<br>
+                Position Start Date: 8/19/24
+            </div>
+        </div>
+
+        <div class="tile faculty-tile coop">
+            <img src="../pics/cheng-s.jpg" alt="Siyi Cheng">
+            <div class="tile-info">
+                <strong>Siyi Cheng</strong><br>
+                Assistant Coop Coordinator<br>
+                E-mail: <a href="mailto:s.cheng@northeastern.edu">s.cheng@northeastern.edu</a><br>
+                Supervisory Organization: MGEN Coop (Laura Meyer)<br>
+                Position Start Date: 11/21/22
+            </div>
+        </div>
+
+    </div>
+
+    <div class="staff-group">
+        <h3>Staff</h3>
+        <div class="tile">
+            <img src="../pics/fadda-a.jpg" alt="Antonio Fadda">
+            <div class="tile-info">
+                <strong>Antonio Fadda</strong><br>
+                Business Title: Academic Advisor<br>
+                E-mail: <a href="mailto:a.fadda@northeastern.edu">a.fadda@northeastern.edu</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
