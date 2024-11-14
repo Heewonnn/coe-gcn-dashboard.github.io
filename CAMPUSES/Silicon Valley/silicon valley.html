@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SILICON VALLEY</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      position: relative;
+      background-image: url('siliconvbg.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      position: absolute;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 36px;
+      text-align: center;
+      color: black;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    h1:hover {
+      color: red;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+
+    .faculty-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .tile {
+      display: flex;
+      background-color: #e0e0e0;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      padding: 15px;
+      align-items: center;
+      font-size: 0.9em;
+    }
+
+    .tile img {
+      width: 100px;
+      height: auto;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+
+    .faculty-tile.research-active {
+      background-color: #d1e7dd;
+    }
+
+    .faculty-tile.coop {
+      background-color: #f8d7da;
+    }
+
+    .teaching-faculty {
+      background-color: #d1e7f3;
+    }
+
+    .local-leadership {
+      background-color: #FFFDD0;
+    }
+
+    .tile-info {
+      flex-grow: 1;
+      font-size: 18px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a[href^="mailto:"] {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #B31B1B;
+    }
+
+    .program-list li {
+      font-size: 1.2em;
+    }
+
+    .background-box {
+      background-color: #00274C;
+      color: white;
+      padding: 20px;
+      margin: 40px auto;
+      width: 95%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1><a href = "https://siliconvalley.northeastern.edu/">Northeastern University, Silicon Valley</a></h1>
+</header>
+
+<div class="content">
+  <section>
+    <h2>Address & General Info</h2>
+    <p>75 E. Santa Clara St., Suite 150, San Jose, CA 95113 Phone: +1 408.707.3695, and email: <a href="mailto:svoperations@northeastern.edu">svoperations@northeastern.edu</a></p>
+    <p>Fueled by our renowned global experiential learning model and use-inspired research enterprise, we equip our students, faculty, and partner organizations to become the creative, nimble, practical problem solvers our world needs, in Silicon Valley, the Bay Area, and beyond.</p>
+  </section>
+
+  <section>
+    <h2>Local Leadership and People We Work With</h2>
+    <div class="faculty-section">
+      <div class="faculty-group">
+        <div class="tile faculty-tile local-leadership">
+          <img src="../../pics/siliconvalley-cs.jpg" alt="Caroline Simard">
+          <div class="tile-info">
+            <strong>Caroline Simard</strong><br>Regional Dean<br>
+            E-mail: <a href="mailto:c.simard@northeastern.edu">c.simard@northeastern.edu</a>
+          </div>
+        </div>
+
+        <div class="tile local-leadership">
+          <img src="../../pics/siliconvalley-dg.jpeg" alt="Dawn Girardelli">
+          <div class="tile-info">
+            <strong>Dawn Girardelli</strong><br>Associate Dean<br>
+            E-mail: <a href="mailto:d.girardelli@northeastern.edu">d.girardelli@northeastern.edu</a>
+          </div>
+        </div>   
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>COE Faculty</h2>
+    <div class="faculty-section">
+      <div class="faculty-group">
+        <div class="tile faculty-tile teaching-faculty">
+          <img src="../../pics/siliconvalley-ra.jpg" alt="Raja Alomari">
+          <div class="tile-info">
+            <strong>Raja Alomari</strong><br>Associate Teaching Professor<br>
+            E-mail: <a href="mailto:r.alomari@northeastern.edu">r.alomari@northeastern.edu</a><br>
+            Supervisory Organization: MGEN (Kal Bugrara)<br>
+            Position Start Date: 8/19/24
+          </div>
+        </div>
+
+        <div class="tile faculty-tile teaching-faculty">
+          <img src="../../pics/siliconvalley-sb.jpg" alt="Suhabe Bugrara">
+          <div class="tile-info">
+            <strong>Suhabe Bugrara</strong><br>Associate Teaching Professor<br>
+            E-mail: <a href="mailto:s.bugrara@northeastern.edu">s.bugrara@northeastern.edu</a><br>
+            Supervisory Organization: Electrical and Computer Engineering (Stefano Basagni)<br>
+            Position Start Date: 8/21/23
+          </div>
+        </div>
+         
+        <div class="tile faculty-tile coop">
+          <img src="../../pics/siliconvalley-eh.jpg" alt="Erica Hatzievgenakis">
+          <div class="tile-info">
+            <strong>Erica Hatzievgenakis</strong><br>Associate Coop Coordinator<br>
+            E-mail: <a href="mailto:e.hatzievgenakis@northeastern.edu">e.hatzievgenakis@northeastern.edu</a><br>
+            Supervisory Organization: MGEN Coop (Laura Meyer)<br>
+            Position Start Date: 4/24/23
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>COE Staff</h2>
+    <div class="faculty-section">
+      <div class="tile">
+        <img src="../../pics/siliconvalley-kw.jpg" alt="Kimberly Wright">
+        <div class="tile-info">
+          <strong>Kimberly Wright</strong><br>Business Title: Academic Advisor<br>
+          E-mail: <a href="mailto:coe-sv-gradadvising@northeastern.edu">coe-sv-gradadvising@northeastern.edu</a>
+        </div>
+      </div> 
+    </div>
+  </section>
+
+  <section>
+    <h2>Active COE Programs</h2>
+    <ul class="program-list">
+      <li>MGEN <a href="https://coe.northeastern.edu/academics-experiential-learning/academic-departments/mgen/ms-cyps/" target="_new">MS Cyber-Physical Systems</a> (Fall 2016)</li>
+      <li>MGEN <a href="https://coe.northeastern.edu/academics-experiential-learning/academic-departments/mgen/ms-insy/" target="_new">MS Information Systems</a> (Fall 2016)</li>
+      <li>MGEN <a href="https://coe.northeastern.edu/academics-experiential-learning/academic-departments/mgen/ms-insy-bridge/" target="_new">MS Information Systems-Bridge</a> (Fall 2016)</li>
+    </ul>
+  </section>
+
+</div>
+
+<div class="background-box">
+  <h3>Keys</h3>
+  <ul>
+    <li style="list-style-type: none; margin-left: -20px;"><p>Teaching faculty are listed with a light blue background.</p></li>
+    <li style="list-style-type: none; margin-left: -20px;"><p>Research active faculty are listed with a light green background.</p></li>
+    <li style="list-style-type: none; margin-left: -20px;"><p>Coop faculty are listed with a light pink background.</p></li>
+  </ul>
+</div>
+
+</body>
+</html>
