@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OAKLAND</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      position: relative;
+      background-image: url('oaklandbg.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      position: absolute;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 36px;
+      text-align: center;
+      color: black;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    h1:hover {
+      color: red;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+
+    .faculty-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .tile {
+      display: flex;
+      background-color: #e0e0e0;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      padding: 15px;
+      align-items: center;
+      font-size: 0.9em;
+    }
+
+    .tile img {
+      width: 100px;
+      height: auto;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+
+    .faculty-tile.research-active {
+      background-color: #d1e7dd;
+    }
+
+    .faculty-tile.coop {
+      background-color: #f8d7da;
+    }
+
+    .teaching-faculty {
+      background-color: #d1e7f3;
+    }
+
+    .local-leadership {
+      background-color: #FFFDD0;
+    }
+
+    .tile-info {
+      flex-grow: 1;
+      font-size: 18px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a[href^="mailto:"] {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #B31B1B;
+    }
+
+    .program-list li {
+      font-size: 1.2em;
+    }
+
+    .background-box {
+      background-color: #00274C;
+      color: white;
+      padding: 20px;
+      margin: 40px auto;
+      width: 95%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1><a href = "https://oakland.northeastern.edu/">Northeastern University, Oakland</a></h1>
+</header>
+
+<div class="content">
+  <section>
+    <h2>Address & General Info</h2>
+    <p>5000 MacArthur Boulevard, Oakland, CA 94613. Phone: +1 510.430.2255, and email: <a href="mailto:oakland@northeastern.edu">oakland@northeastern.edu</a></p>
+    <p>Our West Coast hub for experiential learning, research, and entrepreneurship. Discover the power of experience in the culturally diverse, vibrant Bay Area.</p>
+  </section>
+
+  <section>
+    <h2>Local Leadership and People We Work With</h2>
+    <div class="faculty-section">
+      <div class="faculty-group">
+        <div class="tile faculty-tile local-leadership">
+          <img src="../../pics/oakland-ds.jpg" alt="Daniel Sachs">
+          <div class="tile-info">
+            <strong>Daniel Sachs</strong><br>Dean<br>
+            E-mail: <a href="mailto:d.sachs@northeastern.edu">d.sachs@northeastern.edu</a>
+          </div>
+        </div>    
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>COE Faculty</h2>
+    <div class="faculty-section">
+      <div class="faculty-group">
+        <div class="tile teaching-faculty">
+          <img src="../../pics/oakland-sa.jpg" alt="Sergey Aityan">
+          <div class="tile-info">
+            <strong>Sergey Aityan</strong><br>Teaching Professor<br>
+            E-mail: <a href="mailto:s.aityan@northeastern.edu">s.aityan@northeastern.edu</a><br>
+            Supervisory Organization: MGEN (Kal Bugrara)<br>
+            Position Start Date: 1/16/24
+          </div>
+        </div>
+
+        <div class="tile faculty-tile research-active">
+          <img src="../../pics/oakland-dh.jpg" alt="David Horsley">
+          <div class="tile-info">
+            <strong>David Horsley</strong><br>Professor<br>
+            E-mail: <a href="mailto:d.horsley@northeastern.edu">d.horsley@northeastern.edu</a><br>
+            Supervisory Organization: Electrical and Computer Engineering (Josep Jornet)<br>
+            Position Start Date: 7/1/23
+          </div>
+        </div>
+         
+        <div class="tile faculty-tile teaching-faculty">
+          <img src="../../pics/oakland-ls.jpg" alt="Leila Keyvani Someh">
+          <div class="tile-info">
+            <strong>Leila Keyvani Someh</strong><br>Associate Teaching Professor<br>
+            E-mail: <a href="mailto:l.keyvani@northeastern.edu">l.keyvani@northeastern.edu</a><br>
+            Supervisory Organization: COE-Undergrad First Year Program (Richard Whalen)<br>
+            Position Start Date: 8/29/16
+          </div>
+        </div>
+
+        <div class="tile faculty-tile teaching-faculty">
+          <img src="../../pics/oakland-am.jpg" alt="Abdolreza Mosaddegh">
+          <div class="tile-info">
+            <strong>Abdolreza Mosaddegh</strong><br>Assistant Teaching Professor<br>
+            E-mail: <a href="mailto:a.mosaddegh@northeastern.edu">a.mosaddegh@northeastern.edu</a><br>
+            Supervisory Organization: MGEN (Kal Bugrara)<br>
+            Position Start Date: 1/1/24
+          </div>
+        </div>
+
+        <div class="tile faculty-tile research-active">
+          <img src="../../pics/oakland-an.jpg" alt="Aravind Nagulu">
+          <div class="tile-info">
+            <strong>Aravind Nagulu</strong><br>Assistant Professor<br>
+            E-mail: <a href="mailto:a.nagulu@northeastern.edu">a.nagulu@northeastern.edu</a><br>
+            Supervisory Organization: Electrical and Computer Engineering (Josep Jornet)<br>
+            Position Start Date: 2/1/25
+          </div>
+        </div>
+
+        <div class="tile faculty-tile research-active">
+          <img src="../../pics/oakland-yy.png" alt="Yuan Yuan">
+          <div class="tile-info">
+            <strong>Yuan Yuan</strong><br>Assistant Professor<br>
+            E-mail: <a href="mailto:y.yuan@northeastern.edu">y.yuan@northeastern.edu</a><br>
+            Supervisory Organization: Electrical and Computer Engineering (Josep Jornet)<br>
+            Position Start Date: 2/1/25
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>COE Staff</h2>
+    <div class="faculty-section">
+      <div class="tile">
+        <img src="../../pics/oakland-ss.jpg" alt="Samantha Snow">
+        <div class="tile-info">
+          <strong>Samantha Snow</strong><br>Academic Advisor & Program Manager SEIU<br>
+          E-mail: <a href="mailto:coe-oakland-gradadvising@northeastern.edu">coe-oakland-gradadvising@northeastern.edu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Active COE Programs</h2>
+    <ul class="program-list">
+      <li>MGEN <a href="https://coe.northeastern.edu/academics-experiential-learning/academic-departments/mgen/ms-insy/" target="_new">MS Information Systems</a> (Fall 2016)</li>
+      <li>MGEN <a href="https://coe.northeastern.edu/academics-experiential-learning/academic-departments/mgen/ms-insy-bridge/" target="_new">MS Information Systems-Bridge</a> (Fall 2016)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Planned Programs</h2>
+    <ul class="program-list">
+      <li>ECE <a href="https://ece.northeastern.edu/academics/graduate-studies/phd-elee/" target="_new">PhD Electrical Engineering</a></li>
+    </ul>
+  </section>
+</div>
+
+<div class="background-box">
+  <h3>Keys</h3>
+  <ul>
+    <li style="list-style-type: none; margin-left: -20px;"><p>Teaching faculty are listed with a light blue background.</p></li>
+    <li style="list-style-type: none; margin-left: -20px;"><p>Research active faculty are listed with a light green background.</p></li>
+    <li style="list-style-type: none; margin-left: -20px;"><p>Coop faculty are listed with a light pink background.</p></li>
+  </ul>
+</div>
+
+</body>
+</html>
