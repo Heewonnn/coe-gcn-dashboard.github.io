@@ -136,6 +136,43 @@
             color: #B31B1B;
         }
 
+       /* Campus Tile Styles */
+        .campus-tiles {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .campus-tile {
+            text-align: center;
+            width: 150px;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .campus-tile img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .campus-tile a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #00274C;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .campus-tile a:hover {
+            color: #B31B1B;
+        }
+
+        .campus-tile:hover {
+            transform: scale(1.05);
+        }
+
         /* Footer */
         footer {
             background-color: #00274C;
@@ -143,6 +180,11 @@
             text-align: center;
             padding: 20px;
             margin-top: 50px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
         }
 
         footer p {
@@ -176,10 +218,10 @@
 
     <!-- Intro Section -->
     <section class="intro">
-        <p>Welcome to the College of Engineering's Global Engineering Campus, the College of Engineering presence in the 
+        <p>Welcome to the College of Engineering's Global Engineering Campus (GEC), the College of Engineering presence in the 
         <a href="https://www.northeastern.edu/our-global-university-system/">Global University System</a>. For the purpose of these pages, the Global Engineering Campus concerns all Northeastern University campuses outside Massachusetts where the college expands, creates, and maintains educational and research programs.</p>
         <p>From this page, you can explore the status of our programs, get to know our full-time faculty and staff, and the policy of our engineering campus, as well as links to the teams that support the global university system.</p>
-        <p>For any questions or further information, please contact the Associate Dean of the Global Engineering Campus and the Associate Director of Global Operations.</p>
+        <p>For any questions or further information, please contact the <a href = "mailto:s.basagni@northeastern.edu">Associate Dean of the Global Engineering Campus</a> and the <a href = "mailto:j.nelson@northeastern.edu">Associate Director of Global Operations</a>.</p>
     </section>
 
     <!-- Main Section with Tiles -->
@@ -198,17 +240,74 @@
             <p>Meet our full-time faculty and staff across our global campuses.</p>
         </div>
 
-        <!-- Global University System Teams Tile -->
-        <div class="tile" onclick="location.href='global-teams.html';">
+        <!-- Policy and Global University System Teams Tile -->
+        <div class="tile" onclick="location.href='GUS/GUS.html';">
             <img src="pics/team-icon.webp" alt="Global Teams">
             <h2>Policies and Global University System Teams</h2>
             <p>Useful links to the teams that power the Global University System and to network policies.</p>
         </div>
     </div>
 
+   <br><br><br>
+    <header>
+        <h1>Campuses</h1>
+    </header>
+     <br><br><br>
+
+     <div class="campus-tiles">
+
+       <div class="campus-tile" onclick="location.href='https://arlington.northeastern.edu';">
+         <img src="CAMPUSES/Arlington/arlington.jpg" alt="Arlington, VA">
+         <a href="https://arlington.northeastern.edu">Arlington, VA</a>
+       </div>
+
+       <div class="campus-tile" onclick="location.href='https://london.northeastern.edu';">
+         <img src="images/london.jpg" alt="London, UK">
+         <a href="https://london.northeastern.edu">London, FL</a>
+       </div>
+
+       <div class="campus-tile" onclick="location.href='https://miami.northeastern.edu';">
+         <img src="images/miami.jpg" alt="Miami, FL">
+         <a href="https://miami.northeastern.edu">Miami, FL</a>
+       </div>
+
+       <div class="campus-tile" onclick="location.href='https://oakland.northeastern.edu';">
+         <img src="images/oakland.jpg" alt="Oakland, CA">
+         <a href="https://oakland.northeastern.edu">Oakland, CA</a>
+       </div>
+      
+      <div class="campus-tile" onclick="location.href='https://roux.northeastern.edu/';">
+        <img src="images/portland.jpg" alt="Portland, ME">
+        <a href="https://roux.northeastern.edu">Portland/Roux, ME</a>
+      </div>
+      
+      
+       <div class="campus-tile" onclick="location.href='CAMPUSES/Seattle/seattle.html';">
+         <img src="CAMPUSES/Seattle/seattle.jpg" alt="Seattle, WA">
+         <a href="CAMPUSES/Seattle/seattle.html">Seattle, WA</a>
+       </div>
+    
+      <div class="campus-tile" onclick="location.href='https://siliconvalley.northeastern.edu';">
+        <img src="images/silicon_valley.jpg" alt="Silicon Valley, CA">
+        <a href="https://siliconvalley.northeastern.edu">Silicon Valley, CA</a>
+      </div>
+    
+       <div class="campus-tile" onclick="location.href='https://vancouver.northeastern.edu';">
+          <img src="images/vancouver.jpg" alt="Vancouver, BC">
+          <a href="https://vancouver.northeastern.edu">Vancouver, BC</a>
+       </div>
+      
+      <div class="campus-tile" onclick="location.href='https://toronto.northeastern.edu';">
+        <img src="images/toronto.jpg" alt="Toronto, ON">
+        <a href="https://toronto.northeastern.edu">Toronto, ON</a>
+      </div>
+
+</div>
+
+
     <br><br><br>
     <header>
-        <h1>Global Engineering Campus: Leadership</h1>
+        <h1>Leadership</h1>
     </header>
 
      <br><br><br>
@@ -233,7 +332,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Northeastern University College of Engineering</p>
+        <p>&copy; 2025 Northeastern University <a href = "https://coe.northeastern.edu" target="_new">College of Engineering</a></p>
     </footer>
 
 </body>
