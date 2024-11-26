@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policies & Global University System Teams</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Top Navigation */
+        .top-nav {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .top-nav h2 a {
+            color: #00274C;
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        .top-nav h2 a:hover {
+            color: #B31B1B;
+        }
+
+        /* Header */
+        header {
+            background-color: #00274C;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Intro Section */
+        .intro {
+            padding: 20px;
+            background-color: #fff;
+            margin-bottom: 40px;
+            font-size: 1.2em;
+        }
+
+        .intro a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .intro a:hover {
+            color: #B31B1B;
+        }
+
+        /* Main Section */
+        .main-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Tile Style */
+        .tile {
+            width: 350px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.2s;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .tile:hover {
+            transform: scale(1.05);
+        }
+
+        .tile img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .tile h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .tile p {
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        .tile a {
+            text-decoration: none;
+            color: #00274C;
+            font-weight: bold;
+        }
+
+        .tile a:hover {
+            color: #B31B1B;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #00274C;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Custom Background Colors for Specific Groups */
+        .group-docs {
+            background-color: #d3c7bb; /* Beige */
+        }
+
+        .group-global-office {
+            background-color: #ccd7cd; /* Light green-gray */
+        }
+
+        .group-launch-services {
+            background-color: #ded3b4; /* Pale yellow */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <h2><a href="https://northeastern.edu" target="_new">Northeastern University</a></h2>
+        <h2><a href="https://coe.northeastern.edu" target="_new">College of Engineering</a></h2>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <h1><a href = "../index.html">GEC</a> Policies & the <a href="https://www.northeastern.edu/our-global-university-system/">Global University System</a></h1>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <p>Explore the policies and teams that power the <a href="https://www.northeastern.edu/our-global-university-system/">Global University System</a>. Below you'll find links to important documents and policies, as well as details about the key teams supporting our global network.</p>
+    </section>
+
+    <!-- COE Documents and Policies Section -->
+    <header>
+        <h2>Docs and Policies</h2>
+    </header>
+    
+    <br><br><br>
+    <div class="main-section">
+        <!-- COE Documents Tile -->
+        <div class="tile group-docs" onclick="location.href='policies.html';">
+            <h3>Memo: Expanding COE Programs</h2>
+            <p>A checklist about expanding COE undergraduate and graduate programs.</p>
+        </div>
+        <div class="tile group-docs" onclick="location.href='policies.html';">
+            <h3>Policy: Campus Transfer and Location Change</h3>
+            <p>Guidelines for students to transfer to another campus of the GEC.</p>
+        </div>
+
+    </div>
+    <br><br><br>
+
+    <!-- Global University System Teams Section -->
+    <header>
+        <h2><a href = "https://www.northeastern.edu/our-global-university-system/">Global University System Teams</a></h2>
+    </header>
+
+<br><br><br>
+    <div class="main-section">
+        <!-- Global Experience Office Group -->
+        <div class="tile group-global-office" onclick="location.href='https://geo.northeastern.edu';">
+            <img src="pics/global-experience-icon.png" alt="Global Experience Office">
+            <h3>Global Experience Office</h3>
+            <p>Supporting students across the globe.</p>
+        </div>
+
+        <!-- Global Launch Services Group -->
+        <div class="tile group-launch-services" onclick="location.href='https://globallaunchservices.sites.northeastern.edu';">
+            <img src="pics/launch-icon.png" alt="Global Launch Services">
+            <h3>Global Launch Services</h3>
+            <p>Driving growth and innovation.</p>
+        </div>
+
+       <!-- Global Network and Strategic Initiative Group -->
+        <div class="tile group-launch-services" onclick="location.href='https://www.northeastern.edu/about/university-leadership/global-network-and-strategic-initiatives/';">
+            <img src="pics/launch-icon.png" alt="Global Network and Strategic Initiative">
+            <h3>Global Network and Strategic Initiative</h3>
+            <p>Growth strategy and scaling the global university system.</p>
+        </div>
+
+
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Northeastern University <a href="https://coe.northeastern.edu" target="_new">College of Engineering</a></p>
+    </footer>
+
+</body>
+
+</html>
